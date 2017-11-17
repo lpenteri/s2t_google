@@ -69,6 +69,6 @@ const sampleRateHertz = 16000;
 const languageCode = 'en-UK';
 
 streamingMicRecognize(encoding, sampleRateHertz, languageCode);
-var interval = setTimeout(function() {
+var interval = setInterval(function() {
     streamingMicRecognize(encoding, sampleRateHertz, languageCode);
 }, 65000);
